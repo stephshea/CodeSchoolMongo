@@ -1,0 +1,11 @@
+{
+  "name": "codeschoolmongo",
+  "version": "1.0.0",
+  "description": "mongo exercises",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephanie Shea",
+  "license": "MIT"
+}
