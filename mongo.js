@@ -61,34 +61,3 @@ var mongo = function(db) {
 	{ "_id" : ObjectId("5a6dc4ae6c4071d196bd9140"), "name" : "Claws", "Level" : 7, "health" : 18, "type" : "Running", "attacks" : [ "scratch", "kick" ], "stats" : { "attack" : 1, "defense" : 3 }, "style" : "cool" }
 	{ "_id" : ObjectId("5a6dc4ed6c4071d196bd9141"), "name" : "Crawler", "Level" : 18, "health" : 11, "type" : "Crawling", "attacks" : [ "pop", "kick" ], "stats" : { "attack" : 22, "defense" : 12 }, "style" : "calm" }*/
 }
-//-----Level 1
-function monster(name, health, last_fought, attacks, stats, db) {
-	db.monsters.insert({
-		"name": "monster3",
-		"health": "good",
-		"Last fought": new Date(2017, 12, 19),
-		"Attacks": ["kick", "throw", "bite"],
-		"stats": {
-			"attack": 5,
-			"defense": 8
-		}
-	})
-}
-//find all documents
-db.monsters.find();
-db.monsters.find({
-	"name": "monster1"
-})
-db.monsters.find({
-	"Attacks": "kick"
-})
-db.monsters.find({
-	"Defense": 8
-})
-// function monster (name, health, last_fought, attacks, stats, db) {
-// "name": "monster3",
-// "health": "good",
-// "Last fought": new Date(2017,12,19),
-// "Attacks": ["kick", "throw", "bite"],
-// "stats": {"attack": 5, "defense": 8}
-// }
